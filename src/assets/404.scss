@@ -1,0 +1,38 @@
+.contenedor404 {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  text-align: center;
+  height: 100vh;
+  background-color: #ffcb05; // Fondo estilo Pokédex
+  color: #2a75bb; // Azul Pokémon
+
+  h1 {
+    font-size: 4rem;
+    margin-bottom: 0.5rem;
+  }
+
+  p {
+    font-size: 1.5rem;
+    margin-bottom: 1.5rem;
+  }
+
+  .imagen404 {
+    width: 200px;
+    margin-bottom: 2rem;
+  }
+
+  .botonInicio {
+    padding: 10px 20px;
+    font-size: 1.2rem;
+    background-color: #3b4cca;
+    color: white;
+    text-decoration: none;
+    border-radius: 8px;
+
+    &:hover {
+      background-color: #2a3b8f;
+    }
+  }
+}
