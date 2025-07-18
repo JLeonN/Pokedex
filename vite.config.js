@@ -5,7 +5,7 @@ import vue from '@vitejs/plugin-vue'
 import vueDevTools from 'vite-plugin-vue-devtools'
 
 export default defineConfig({
-  base: '/pokedex/', // 👈 importante para GitHub Pages
+  base: '/Pokedex/', // 👈 importante para GitHub Pages
   plugins: [
     vue(),
     vueDevTools(),
