@@ -15,7 +15,7 @@
   <main class="main" v-if="Object.entries(pokemonData).length > 0">
     <section class="pokemonCard">
       <div class="nameImage">
-        <h1 class="pokemonName">{{ pokemonData.name }}</h1>
+        <h1 class="pokemonName">#{{ pokemonData.id }} - {{ pokemonData.name }}</h1>
         <img :src="pokemonData.sprites.front_default" :alt="pokemonData.name" />
       </div>
       <ul class="type">
