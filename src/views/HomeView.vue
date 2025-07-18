@@ -2,7 +2,12 @@
   <header class="header">
     <label for="pokemonInput">
       Escribe el nombre o ID del Pokémon:
-      <input type="text" id="pokemonInput" v-model="pokemonID" />
+      <input
+        type="text"
+        id="pokemonInput"
+        v-model="pokemonID"
+        @keyup.enter="searchPokemon"
+      />
     </label>
     <button class="searchButton" @click="searchPokemon">Buscar pokemon!</button>
   </header>
