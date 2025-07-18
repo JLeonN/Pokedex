@@ -24,7 +24,7 @@
         </li>
       </ul>
       <ul class="stats">
-        <h2>Estadísticas:</h2>
+        <h2 class="statsH2">Estadísticas:</h2>
         <li v-for="(stat, key) in pokemonData.stats" :key="key">
           <span>{{ stat.stat.name }} -> {{ stat.base_stat }}</span>
         </li>

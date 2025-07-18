@@ -62,6 +62,9 @@ input[type="text"],
     justify-content: flex-start;
     align-items: center;
   }
+   & .statsH2 {
+    align-self: flex-start;
+  }
 
   & .nameImage {
     & .pokemonName {
