@@ -209,3 +209,62 @@ ul {
     }
   }
 }
+
+// Estilos generales del contenedor
+.masInformacion {
+  background-color: $pokedex-blue; // color de fondo azul pokedex
+  color: white;
+  padding: 2rem;
+  margin-top: 2rem;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  text-align: center;
+}
+// Título de la sección
+.tituloMasInformacion {
+  font-size: 2rem;
+  margin-bottom: 1rem;
+  text-transform: uppercase;
+}
+// Contenedor de la línea evolutiva (en fila y centrado)
+.contenedorEvoluciones {
+  display: flex;
+  flex-direction: row !important;
+  align-items: center;
+  justify-content: center;
+  flex-wrap: nowrap;
+  gap: 2rem;
+}
+// En pantallas grandes (PC, notebooks)
+@media (min-width: 10px) {
+  .contenedorEvoluciones {
+    flex-direction: row;
+    flex-wrap: nowrap;
+    overflow-x: auto;
+    gap: 2rem;
+  }
+}
+// Estilos individuales para cada Pokémon en la cadena
+.pokemonEvolucion {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  background-color: rgb(202, 17, 17);
+  color: black;
+  padding: 1rem;
+  border-radius: 10px;
+}
+// Imagen del Pokémon
+.pokemonEvolucion img {
+  width: 100px;
+  background-color: $pokedex-green; // fondo coherente con el estilo
+  border-radius: 50%;
+  margin-bottom: 0.5rem;
+}
+// Flecha entre evoluciones
+.flecha {
+  font-size: 3rem;
+  color: white;
+}
+
