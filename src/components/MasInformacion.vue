@@ -8,7 +8,7 @@
             :src="obtenerImagen(pokemon.id)"
             :alt="pokemon.nombre"
           />
-          <span>{{ pokemon.nombre }}</span>
+          <span>#{{ pokemon.id }} - {{ pokemon.nombre }}</span>
         </div>
         <span class="flecha" v-if="index !== evoluciones.length - 1">→</span>
       </template>
@@ -24,6 +24,10 @@ export default {
       type: Array,
       required: true,
     },
+    idPokemon: {
+    type: [String, Number],
+    required: true
+  }
   },
   methods: {
     obtenerImagen(id) {

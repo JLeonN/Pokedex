@@ -39,7 +39,10 @@
         </li>
       </ul>
     </section>
-    <MasInformacion :evoluciones="cadenaEvolutiva" />
+    <MasInformacion
+      :evoluciones="cadenaEvolutiva"
+      :id-pokemon="datosPokemon.id"
+    />
   </main>
 </template>
 
