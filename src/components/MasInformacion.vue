@@ -4,10 +4,7 @@
     <div class="contenedorEvoluciones">
       <template v-for="(pokemon, index) in evoluciones" :key="pokemon.id">
         <div class="pokemonEvolucion">
-          <img
-            :src="obtenerImagen(pokemon.id)"
-            :alt="pokemon.nombre"
-          />
+          <img :src="obtenerImagen(pokemon.id)" :alt="pokemon.nombre" />
           <span>#{{ pokemon.id }} - {{ pokemon.nombre }}</span>
         </div>
         <span class="flecha" v-if="index !== evoluciones.length - 1">→</span>
@@ -25,9 +22,9 @@ export default {
       required: true,
     },
     idPokemon: {
-    type: [String, Number],
-    required: true
-  }
+      type: [String, Number],
+      required: true,
+    },
   },
   methods: {
     obtenerImagen(id) {

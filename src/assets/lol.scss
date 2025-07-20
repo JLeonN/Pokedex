@@ -62,7 +62,7 @@ input[type="text"],
     justify-content: flex-start;
     align-items: center;
   }
-   & .statsH2 {
+  & .statsH2 {
     align-self: flex-start;
   }
 
@@ -263,19 +263,15 @@ ul {
     flex-direction: column !important;
     gap: 1.5rem;
   }
-
   .flecha {
     transform: rotate(90deg); // flecha hacia abajo
   }
-
   .pokemonEvolucion img {
     width: 80px;
   }
-
   .tituloMasInformacion {
     font-size: 1.5rem;
   }
-
   .masInformacion {
     padding: 1rem;
   }
