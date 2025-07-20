@@ -236,15 +236,6 @@ ul {
   flex-wrap: nowrap;
   gap: 2rem;
 }
-// En pantallas grandes (PC, notebooks)
-@media (min-width: 10px) {
-  .contenedorEvoluciones {
-    flex-direction: row;
-    flex-wrap: nowrap;
-    overflow-x: auto;
-    gap: 2rem;
-  }
-}
 // Estilos individuales para cada Pokémon en la cadena
 .pokemonEvolucion {
   display: flex;
@@ -267,4 +258,25 @@ ul {
   font-size: 3rem;
   color: white;
 }
+@media screen and (max-width: 767px) {
+  .contenedorEvoluciones {
+    flex-direction: column !important;
+    gap: 1.5rem;
+  }
 
+  .flecha {
+    transform: rotate(90deg); // flecha hacia abajo
+  }
+
+  .pokemonEvolucion img {
+    width: 80px;
+  }
+
+  .tituloMasInformacion {
+    font-size: 1.5rem;
+  }
+
+  .masInformacion {
+    padding: 1rem;
+  }
+}
