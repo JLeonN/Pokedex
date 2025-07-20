@@ -77,6 +77,8 @@ export default {
         alert("No se encontró el Pokémon");
         this.datosPokemon = {};
         this.cadenaEvolutiva = [];
+      } finally {
+        this.pokemonID = ""; // Limpia el input
       }
     },
 
